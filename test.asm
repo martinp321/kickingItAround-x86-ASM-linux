@@ -1,3 +1,9 @@
+;nasm -f elf64 -l test.lst test.asm
+;gcc -m64 -o test test.o
+
+
+
+
 	extern printf
 
 	section .data
