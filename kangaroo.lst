@@ -1,0 +1,11 @@
+     1                                  	section .data
+     2 00000000 D2                      	Snippet db 1234
+     3                                  
+     4                                  	section .text
+     5                                  	global main
+     6                                  main:
+     7 00000000 90                      	nop
+     8 00000001 B805000000              	mov eax, 5
+     9                                  
+    10 00000006 FFC8                    doMore:	dec eax
+    11 00000008 EBFC                    	jmp doMore
